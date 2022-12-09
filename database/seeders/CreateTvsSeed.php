@@ -28,34 +28,34 @@ class CreateTvsSeed extends Seeder
       [
 
         'name' => 'TV 42 Polegadas',
-        'price' => 500,
+        'price' => 1000,
       ],
       [
 
         'name' => 'TV 52 Polegadas',
-        'price' => 500,
+        'price' => 1500,
       ],
       [
 
         'name' => 'TV 55 Polegadas',
-        'price' => 500,
+        'price' => 1700,
       ],
       [
 
         'name' => 'TV 47 Polegadas',
-        'price' => 500,
+        'price' => 1200,
 
       ],
       [
 
         'name' => 'TV 70 Polegadas',
-        'price' => 500,
+        'price' => 3500,
 
       ],
       [
 
-        'name' => 'TV 75 Polegadas',
-        'price' => 500,
+        'name' => 'TV 85 Polegadas',
+        'price' => 10000,
 
       ]
     ];

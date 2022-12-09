@@ -11,9 +11,8 @@ async function sumTotalBudget() {
   const instalmentPrice = document.getElementById('instalmentPrice')
 
   instalmentPrice.innerText = planTotalValue
-  console.log(instalmentPrice.innerText)
-  updateChart()
   await storeBudgetOnDB(totalBudget, instalmentPrice.innerText)
+  updateChart()
 }
 
 

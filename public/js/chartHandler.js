@@ -16,7 +16,6 @@ const labels = [
 function getChartData () {
   const initialInvest = document.getElementById('initialInvest').innerText
   const instalment = document.getElementById('instalmentPrice').innerText.replace('R$ ', '')
-  console.log(instalment)
   const chartDataset = []
 
 

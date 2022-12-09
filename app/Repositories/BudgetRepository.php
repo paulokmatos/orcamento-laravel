@@ -22,8 +22,8 @@ class BudgetRepository
   public function updateBudget(string $cpf, string $instalmentPrice, string $totalPrice)
   {
     return Budget::updateOrCreate(
+      ['cpf' => $cpf],
       [
-        'cpf' => $cpf,
         'total_price' => $totalPrice,
         'instalment_price' => $instalmentPrice
       ]

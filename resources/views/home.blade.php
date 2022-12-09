@@ -116,15 +116,18 @@
           </div>
           <div class="manpower">
             <span class="subtitle">Mão de Obra de Instalação</span>
-            <input onchange="sumTotalBudget()" type="number" class="manpower-input" placeholder="R$ 2.000,00">
+            <input onchange="sumTotalBudget()" value="0" type="number" class="manpower-input" placeholder="R$ 2.000,00">
           </div>
         </div>
         <div class="col-6">
           <div class="plans-pricing column text-center">
             <span class="subtitle">Valores dos Planos / Mês</span>
-            <div id="plans-pricing-table">
-
+            @foreach($plans as $plan)
+            <div class="flex">
+              <span>{{$plan['name']}}</span>
+              <span>R$ {{$plan['monthly_price']}}</span>
             </div>
+            @endforeach
             <span class="subtitle">
               Link para tabela e descrição dos planos
             </span>
@@ -154,7 +157,7 @@
           </div>
           <div class="budget flex  justify-between">
             <span>R$</span>
-            <span id="instalmentPrice">0</span>
+            <span id="instalmentPrice">{{$budget['instalment_price']}}</span>
           </div>
         </div>
       </div>
@@ -201,13 +204,11 @@
 
   <script>
     window.onload = () => {
-      const paymentType = document.getElementById('payment').value
       const cpf = @json($budget->cpf);
       localStorage.setItem('cpf', cpf)
       sumAllTvsPrices()
       sumAllPlayersPrices()
       sumTotalBudget()
-      getPlans(plans, paymentType);
     }
     function onlyNumbers(e) {
 
