@@ -1,0 +1,210 @@
+:root {
+  --primary-500: #205867;
+  --primary-400: #31859b;
+  --primary-300: #92cddc;
+  --primary-100: #b6dde8;
+  --secondary-color: #92d050;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Calibri', sans-serif;
+}
+
+.logo {
+  padding-left:  24px;
+  align-self: center;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  color: aliceblue;
+  font-size: 20px;
+  height: 100px;
+  background-color: var(--primary-500);
+}
+
+.title {
+  flex: 1;
+  align-self: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.subtitle {
+  padding: 4px 16px;
+  background-color: #31859b;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: flex;
+  margin: 1rem;
+  gap: 1%;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+.tv {
+  width: 100%;
+}
+
+.licenses, .payment, .manpower, .plans-pricing{
+  display: flex;
+  margin-bottom: 1rem;
+  width: 100%;
+  flex-direction: column;
+}
+
+.budget {
+  color: #fff;
+  flex: 1;
+  font-weight: bold;
+  background-color: #92cddc;
+  border: .5px solid #205867;
+  padding: 8px 1rem;
+  font-size: 1.2rem;
+}
+
+.bg-primary-500 {
+  background-color: #205867;
+  color: #fff;
+}
+.bg-primary-400 {
+  color: #fff;
+  background-color: #31859b;
+}
+.plans-pricing > div {
+  flex: 2;
+  width: 100%;
+  border: 1px solid #205867;
+}
+
+.plans-pricing .subtitle {
+  background-color: #205867 ;
+}
+
+.plans-pricing  span {
+  flex:1 ;
+  flex-wrap: nowrap;
+  display: block;
+}
+
+.manpower-input{
+  text-align: center;
+  padding: 4px;
+  border: slategray .5px solid;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.licenses select, .payment select {
+  text-align: center;
+  padding: 0 4px;
+
+}
+
+.link {
+  padding: 8px;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.grphic {
+  border: 1px solid slategray;
+  padding: 10px;
+  margin: 10px;
+}
+
+.plan-qnt-select  {
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  height: 30px;
+  padding: 4px;
+  font-size: 1rem;
+}
+
+
+.text-white {
+  color: #fff;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 48%;
+}
+
+.row {
+  display: flex;
+  gap: 1%;
+  width: 100%;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table td, .table th {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.table-inner-input {
+  width: fit-content;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-align: center;
+}
+
